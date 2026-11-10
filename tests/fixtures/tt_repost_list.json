@@ -1,0 +1,14 @@
+{
+  "hasMore": false,
+  "itemList": [
+    {
+      "id": "7300000000000000009", "desc": "the best pour-over method (science edition) #coffee",
+      "createTime": 1728000000,
+      "author": {"id": "77", "uniqueId": "coffeescience", "verified": true},
+      "music": {"title": "original sound", "authorName": "coffeescience", "original": true},
+      "stats": {"diggCount": 900000, "shareCount": 20000, "commentCount": 5000, "playCount": 12000000},
+      "video": {"duration": 58, "width": 1080, "height": 1920, "playAddr": "https://v16.example/r9.mp4",
+                "cover": "https://p16.example/r9.jpg"}
+    }
+  ]
+}

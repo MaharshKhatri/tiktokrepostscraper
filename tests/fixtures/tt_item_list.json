@@ -1,0 +1,31 @@
+{
+  "statusCode": 0,
+  "hasMore": false,
+  "cursor": "0",
+  "itemList": [
+    {
+      "id": "7400000000000000001", "desc": "POV: your first espresso shot #coffeetok #barista @beanbros",
+      "createTime": 1730050000,
+      "author": {"id": "1", "uniqueId": "creator", "verified": true},
+      "music": {"id": "m1", "title": "original sound - creator", "authorName": "creator", "original": true},
+      "stats": {"diggCount": 15000, "shareCount": 300, "commentCount": 420, "playCount": 250000, "collectCount": 900},
+      "video": {"id": "v1", "duration": 22, "width": 720, "height": 1280,
+                "playAddr": "https://v16.tiktokcdn.example/v1.mp4", "cover": "https://p16.example/cover1.jpg",
+                "originCover": "https://p16.example/origin1.jpg"},
+      "textExtra": [{"hashtagName": "coffeetok"}, {"hashtagName": "barista"}, {"userUniqueId": "beanbros"}],
+      "challenges": [{"title": "coffeetok"}],
+      "stickersOnItem": [{"stickerText": ["day 1 of learning"]}]
+    },
+    {
+      "id": "7400000000000000002", "desc": "Cafe hopping in Seoul 📸", "createTime": 1729950000,
+      "author": {"id": "1", "uniqueId": "creator"},
+      "music": {"title": "Ditto", "authorName": "NewJeans", "original": false},
+      "stats": {"diggCount": 8000, "shareCount": 120, "commentCount": 90, "playCount": 110000, "collectCount": 400},
+      "imagePost": {"images": [
+        {"imageURL": {"urlList": ["https://p16.example/img1.jpg"]}, "imageWidth": 1080, "imageHeight": 1440},
+        {"imageURL": {"urlList": ["https://p16.example/img2.jpg"]}, "imageWidth": 1080, "imageHeight": 1440}
+      ]},
+      "video": {"duration": 0}
+    }
+  ]
+}

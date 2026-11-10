@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "pk": "3401000000000000001", "id": "3401000000000000001_555", "code": "C1photoAAA",
+      "taken_at": 1730000000, "media_type": 1, "product_type": "feed",
+      "caption": {"text": "Sunday reset ☕️ #slowliving #homecafe with @brewco"},
+      "image_versions2": {"candidates": [
+        {"url": "https://cdn.example/p1_small.jpg", "width": 320, "height": 400},
+        {"url": "https://cdn.example/p1_big.jpg", "width": 1080, "height": 1350}
+      ]},
+      "like_count": 1200, "comment_count": 34,
+      "location": {"name": "Blue Bottle Coffee", "city": "Brooklyn, New York", "lat": 40.7, "lng": -73.9},
+      "user": {"pk": "555", "username": "creator", "is_verified": true},
+      "usertags": {"in": [{"user": {"username": "brewco"}}]},
+      "is_paid_partnership": true
+    },
+    {
+      "pk": "3401000000000000002", "code": "C2carouBBB", "taken_at": 1729900000, "media_type": 8,
+      "product_type": "carousel_container", "caption": {"text": "Lisbon dump 🇵🇹 #travel"},
+      "carousel_media": [
+        {"pk": "1", "media_type": 1, "image_versions2": {"candidates": [{"url": "https://cdn.example/c1.jpg", "width": 1080, "height": 1080}]}},
+        {"pk": "2", "media_type": 2, "video_duration": 7.5,
+         "image_versions2": {"candidates": [{"url": "https://cdn.example/c2_cover.jpg", "width": 1080, "height": 1920}]},
+         "video_versions": [{"url": "https://cdn.example/c2.mp4", "width": 720, "height": 1280}]},
+        {"pk": "3", "media_type": 1, "image_versions2": {"candidates": [{"url": "https://cdn.example/c3.jpg", "width": 1080, "height": 1350}]}}
+      ],
+      "like_count": 2400, "comment_count": 50, "user": {"pk": "555", "username": "creator"}
+    },
+    {
+      "pk": "3401000000000000003", "code": "C3reelCCC", "taken_at": 1729800000, "media_type": 2,
+      "product_type": "clips", "caption": {"text": "3 easy latte art tips #coffee #tutorial"},
+      "video_duration": 31.2, "play_count": 98000, "like_count": 5400, "comment_count": 210,
+      "image_versions2": {"candidates": [{"url": "https://cdn.example/r_cover.jpg", "width": 1080, "height": 1920}]},
+      "video_versions": [{"url": "https://cdn.example/r_lo.mp4", "width": 480, "height": 854},
+                         {"url": "https://cdn.example/r_hi.mp4", "width": 1080, "height": 1920}],
+      "clips_metadata": {"music_info": {"music_asset_info": {"title": "Golden Hour", "display_artist": "JVKE"}}},
+      "user": {"pk": "555", "username": "creator"}
+    }
+  ],
+  "more_available": false,
+  "next_max_id": null
+}

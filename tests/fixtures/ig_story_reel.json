@@ -1,0 +1,22 @@
+{
+  "reels": {
+    "555": {
+      "id": "555",
+      "items": [
+        {
+          "pk": "3402000000000000001", "taken_at": 1730100000, "media_type": 2, "expiring_at": 1730186400,
+          "video_duration": 9.0,
+          "image_versions2": {"candidates": [{"url": "https://cdn.example/s1.jpg", "width": 720, "height": 1280}]},
+          "video_versions": [{"url": "https://cdn.example/s1.mp4", "width": 720, "height": 1280}],
+          "story_hashtags": [{"hashtag": {"name": "morningroutine"}}],
+          "story_locations": [{"location": {"name": "Brooklyn", "lat": 1.0, "lng": 2.0}}],
+          "reel_mentions": [{"user": {"username": "brewco"}}],
+          "story_link_stickers": [{"story_link": {"url": "https://shop.example/code"}}],
+          "story_polls": [{"poll_sticker": {"question": "Oat or almond?"}}],
+          "story_music_stickers": [{"music_asset_info": {"title": "Sunflower", "display_artist": "Post Malone"}}],
+          "user": {"pk": "555", "username": "creator"}
+        }
+      ]
+    }
+  }
+}

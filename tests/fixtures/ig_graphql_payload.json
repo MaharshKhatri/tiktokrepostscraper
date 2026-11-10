@@ -1,0 +1,20 @@
+{
+  "data": {
+    "xdt_api__v1__feed__user_timeline_graphql_connection": {
+      "edges": [
+        {"node": {"pk": "9001", "id": "9001_555", "code": "GQL1", "taken_at": 1720000000, "media_type": 1,
+                  "image_versions2": {"candidates": [{"url": "https://cdn.example/g1.jpg", "width": 1080, "height": 1080}]},
+                  "user": {"username": "creator"}}},
+        {"node": {"pk": "9002", "id": "9002_555", "code": "GQL2", "taken_at": 1720000100, "media_type": 8,
+                  "carousel_media": [
+                    {"pk": "a", "id": "a_1", "taken_at": 1720000100, "media_type": 1,
+                     "image_versions2": {"candidates": [{"url": "https://cdn.example/g2a.jpg", "width": 1, "height": 1}]}},
+                    {"pk": "b", "id": "b_1", "taken_at": 1720000100, "media_type": 1,
+                     "image_versions2": {"candidates": [{"url": "https://cdn.example/g2b.jpg", "width": 1, "height": 1}]}}
+                  ],
+                  "user": {"username": "creator"}}}
+      ],
+      "page_info": {"has_next_page": false}
+    }
+  }
+}

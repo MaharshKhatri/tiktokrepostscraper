@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "creator-persona-audit"
+version = "0.1.0"
+description = "Cross-platform (Instagram + TikTok) creator profile collection and multimodal persona/content intelligence reports."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Proprietary" }
+dependencies = [
+    "anthropic>=1.0.0",
+    "playwright>=1.45",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "typer>=0.12",
+    "rich>=13.7",
+    "pillow>=10.3",
+    "faster-whisper>=1.0",
+    "yt-dlp>=2024.8.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.6",
+]
+
+[project.scripts]
+audit = "cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["config", "auth", "scrapers", "pipeline", "intelligence", "storage"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"cli.py" = "cli.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = ["data", "reports", "auth/sessions", ".venv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+markers = [
+    "browser: needs a launchable Chromium (set AUDIT_BROWSER__EXECUTABLE_PATH if Playwright's bundled build is missing)",
+    "whisper: downloads a faster-whisper model",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = ["data", "reports"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501", "UP017", "UP042"]

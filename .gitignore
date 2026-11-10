@@ -1,0 +1,26 @@
+# Secrets and sessions
+.env
+auth/sessions/*
+!auth/sessions/.gitkeep
+
+# Collected data, derived media, caches and reports
+data/
+reports/*
+!reports/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
